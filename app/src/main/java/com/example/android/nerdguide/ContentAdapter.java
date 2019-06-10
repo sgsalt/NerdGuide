@@ -60,7 +60,7 @@ public class ContentAdapter extends ArrayAdapter<VenueContent> {
         }
 
         //Find the TextView in the venue_item.xml layout file with the ID venue_location_text
-        TextView locationTextView = listItemView.findViewById(R.id.venue_location_text);
+        TextView locationTextView = listItemView.findViewById(R.id.venue_location);
             //Get the text from the currentVenue object and set it on the location TextView
         locationTextView.setText(currentVenue.getVenueLocation());
 
