@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Nerd Guide</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <!--Strings for the category name tabs-->
+    <string name="category_board_games">Board Games</string>
+    <string name="category_video_games">Video Games</string>
+    <string name="category_comics">Comics</string>
+    <string name="category_vinyl">Vinyl</string>
+
+</resources>
