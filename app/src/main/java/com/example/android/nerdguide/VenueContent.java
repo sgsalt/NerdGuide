@@ -16,10 +16,10 @@ public class VenueContent {
     private String mVenueLocation;
 
     // Name of the venue
-    private String mVenueName;
+    private int mVenueName;
 
     // Details about the venue
-    private String mVenueDetails;
+    private int mVenueDetails;
 
     /**
      * Creates the new Venue content object.
@@ -29,7 +29,7 @@ public class VenueContent {
      * @param venueDetails  is details about the location such as what you can do there,
      *                      what it sells, or why it's of interest to nerds.
      */
-    public VenueContent(int imageResourceId, String venueLocation, String venueName, String venueDetails) {
+    public VenueContent(int imageResourceId, String venueLocation, int venueName, int venueDetails) {
         mImageResourceId = imageResourceId;
         mVenueLocation = venueLocation;
         mVenueName = venueName;
@@ -51,12 +51,12 @@ public class VenueContent {
     }
 
     // Get the venue name
-    public String getVenueName() {
+    public int getVenueName() {
         return mVenueName;
     }
 
     // Get the venue details
-    public String getVenueDetails() {
+    public int getVenueDetails() {
         return mVenueDetails;
     }
 

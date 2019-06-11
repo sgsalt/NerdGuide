@@ -40,7 +40,7 @@ public class ContentAdapter extends ArrayAdapter<VenueContent> {
         View listItemView = convertView;
         if (listItemView == null) {
             listItemView = LayoutInflater.from(parent.getContext())
-                    .inflate(R.layout.venue_list, parent, false);
+                    .inflate(R.layout.venue_content, parent, false);
         }
 
         // Get the VenueContent object located at this position in the list

@@ -35,9 +35,7 @@ public class VideoGamesFragment extends Fragment {
 
         //Create the venue array
         final ArrayList<VenueContent> venueContents = new ArrayList<>();
-        venueContents.add(new VenueContent(R.drawable.retro_toys, "Cardiff", "Chance and Counters","This is where all those venue details go" ));
-        venueContents.add(new VenueContent(R.drawable.retro_toys, "Cardiff", "Chance and Counters","This is where all those venue details go" ));
-        venueContents.add(new VenueContent(R.drawable.retro_toys, "Cardiff", "Chance and Counters","This is where all those venue details go" ));
+        venueContents.add(new VenueContent(R.drawable.retro_toys, "Cardiff", R.string.chance_and_counters_name,R.string.chance_details ));
 
         // Create a ContentAdapter whose data source is the list of venues.
         ContentAdapter adapter = new ContentAdapter(getActivity(), venueContents, R.color.colorAccent);

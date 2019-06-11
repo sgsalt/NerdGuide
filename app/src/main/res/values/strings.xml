@@ -1,15 +1,22 @@
 <resources>
     <string name="app_name">Nerd Guide</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-
     <!--Strings for the category name tabs-->
     <string name="category_board_games">Board Games</string>
     <string name="category_video_games">Video Games</string>
     <string name="category_comics">Comics</string>
     <string name="category_vinyl">Vinyl</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!--strings for the venue content-->
+    <string name="cardiff">Cardiff</string>
+
+    <!--chance and counters text -->
+    <string name="chance_and_counters_name">Chance and Counters</string>
+    <string name="chance_details">Our venues are purpose\-built spaces for board gamers of all ages
+        and abilities to enjoy, from casual players to seasoned strategists.\n\nWe take real pride in
+        our food and drink too, from our rotating craft beers and ciders to our seasonal,
+        locally-sourced food.\n\nWith over 600 games and friendly, knowledgeable staff to help
+        you learn them, whether you\’re after the best in new board games or some old-school
+        classics we\’ve got you covered.</string>
 
 </resources>
