@@ -4,7 +4,6 @@ Nerd Guide is a tourism app for Nerds, showcasing venues of interest like board 
 
 Credits:
 
-Images from unsplash.com
-Icons from materialdesignicons.com
+Images from unsplash.com, icons from materialdesignicons.com.
 
 More to follow...
