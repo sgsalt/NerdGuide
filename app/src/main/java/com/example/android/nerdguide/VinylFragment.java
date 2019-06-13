@@ -37,13 +37,13 @@ public class VinylFragment extends Fragment {
         final ArrayList<VenueContent> venueContents = new ArrayList<>();
         venueContents.add(new VenueContent(R.drawable.divinyl, "Cardiff", R.string.dvinyl_name,
                 R.string.dvinyl_hashtags, R.string.dvinyl_details, R.string.dvinyl_address, R.string.dvinyl_phone,
-                R.string.dvinyl_times ));
+                R.string.dvinyl_times));
         venueContents.add(new VenueContent(R.drawable.spillers, "Cardiff", R.string.spillers_name,
                 R.string.spillers_hashtags, R.string.spillers_details, R.string.spillers_address, R.string.spillers_phone,
-                R.string.spillers_times ));
+                R.string.spillers_times));
         venueContents.add(new VenueContent(R.drawable.kellys, "Cardiff", R.string.kellys_name,
                 R.string.kellys_hashtags, R.string.kellys_details, R.string.kellys_address, R.string.kellys_phone,
-                R.string.kellys_times ));
+                R.string.kellys_times));
 
         // Create a ContentAdapter whose data source is the list of venues.
         ContentAdapter adapter = new ContentAdapter(getActivity(), venueContents, R.color.colorPrimary);

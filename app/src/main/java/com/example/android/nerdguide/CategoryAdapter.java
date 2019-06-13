@@ -6,21 +6,22 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 /**
- *      This is a {@link FragmentPagerAdapter} that can provide each Venue list item based
- *      on a data source which is a {@link VenueContent} object
+ * This is a {@link FragmentPagerAdapter} that can provide each Venue list item based
+ * on a data source which is a {@link VenueContent} object
  */
 
 public class CategoryAdapter extends FragmentPagerAdapter {
 
-    /** Context of the app */
+    /**
+     * Context of the app
+     */
     private Context mContext;
 
     /**
      * Create a new {@link CategoryAdapter} object.
      *
      * @param context is the context of the app
-     * @param fm is the fragment manager that will keep each fragments state across wipes
-     *
+     * @param fm      is the fragment manager that will keep each fragments state across wipes
      */
     public CategoryAdapter(Context context, FragmentManager fm) {
         super(fm);
@@ -34,9 +35,9 @@ public class CategoryAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         if (position == 0) {
             return new BoardGamesFragment();
-        } else if (position == 1){
+        } else if (position == 1) {
             return new VideoGamesFragment();
-        } else if (position == 2){
+        } else if (position == 2) {
             return new ComicsFragment();
         } else {
             return new VinylFragment();
@@ -44,7 +45,7 @@ public class CategoryAdapter extends FragmentPagerAdapter {
     }
 
     /**
-     *Return the total number of pages
+     * Return the total number of pages
      */
 
     @Override

@@ -1,7 +1,8 @@
 package com.example.android.nerdguide;
 
 
-/** This is the custom class for Venue content in the Fragments
+/**
+ * This is the custom class for Venue content in the Fragments
  * Contains an image, location, venue name and description
  */
 
@@ -44,7 +45,6 @@ public class VenueContent {
      * @param venueAddress  the address of the venue.
      * @param venuePhone    phone number of the venue.
      * @param openingTimes  the venues opening hours.
-     *
      */
     public VenueContent(int imageResourceId, String venueLocation, int venueName, int venueHashtags,
                         int venueDetails, int venueAddress, int venuePhone, int openingTimes) {
@@ -102,7 +102,11 @@ public class VenueContent {
         return mOpeningTimes;
     }
 
-    /** Returns whether or not there is an image for this venue */
-    public boolean hasImage (){ return mImageResourceId != NO_IMAGE_PROVIDED; }
+    /**
+     * Returns whether or not there is an image for this venue
+     */
+    public boolean hasImage() {
+        return mImageResourceId != NO_IMAGE_PROVIDED;
+    }
 
 }
