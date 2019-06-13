@@ -35,10 +35,18 @@ public class VinylFragment extends Fragment {
 
         //Create the venue array
         final ArrayList<VenueContent> venueContents = new ArrayList<>();
-        venueContents.add(new VenueContent(R.drawable.retro_toys, "Cardiff", R.string.chance_and_counters_name,R.string.chance_details ));
+        venueContents.add(new VenueContent(R.drawable.divinyl, "Cardiff", R.string.dvinyl_name,
+                R.string.dvinyl_hashtags, R.string.dvinyl_details, R.string.dvinyl_address, R.string.dvinyl_phone,
+                R.string.dvinyl_times ));
+        venueContents.add(new VenueContent(R.drawable.spillers, "Cardiff", R.string.spillers_name,
+                R.string.spillers_hashtags, R.string.spillers_details, R.string.spillers_address, R.string.spillers_phone,
+                R.string.spillers_times ));
+        venueContents.add(new VenueContent(R.drawable.kellys, "Cardiff", R.string.kellys_name,
+                R.string.kellys_hashtags, R.string.kellys_details, R.string.kellys_address, R.string.kellys_phone,
+                R.string.kellys_times ));
 
         // Create a ContentAdapter whose data source is the list of venues.
-        ContentAdapter adapter = new ContentAdapter(getActivity(), venueContents, R.color.colorAccent);
+        ContentAdapter adapter = new ContentAdapter(getActivity(), venueContents, R.color.colorPrimary);
 
         //Find the ListView object in the view hierarchy, The ListView called list is
         // declared in the venue_list.xml layout file

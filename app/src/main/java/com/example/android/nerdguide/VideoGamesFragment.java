@@ -35,10 +35,18 @@ public class VideoGamesFragment extends Fragment {
 
         //Create the venue array
         final ArrayList<VenueContent> venueContents = new ArrayList<>();
-        venueContents.add(new VenueContent(R.drawable.retro_toys, "Cardiff", R.string.chance_and_counters_name,R.string.chance_details ));
+        venueContents.add(new VenueContent(R.drawable.super_tomato, "Cardiff", R.string.super_tomato_name,
+                R.string.super_tomato_hashtags, R.string.super_tomato_details, R.string.super_tomato_address,
+                R.string.super_tomato_phone, R.string.super_tomato_times));
+        venueContents.add(new VenueContent(R.drawable.kongs, "Cardiff", R.string.kongs_name,
+                R.string.kongs_hashtags, R.string.kongs_details, R.string.kongs_address, R.string.kongs_phone,
+                R.string.kongs_times));
+        venueContents.add(new VenueContent(R.drawable.arcade_vaults, "Cardiff", R.string.arcade_vaults_name,
+                R.string.arcade_vaults_hashtags, R.string.arcade_vaults_details, R.string.arcade_vaults_address,
+                R.string.arcade_vaults_phone, R.string.arcade_vaults_times));
 
         // Create a ContentAdapter whose data source is the list of venues.
-        ContentAdapter adapter = new ContentAdapter(getActivity(), venueContents, R.color.colorAccent);
+        ContentAdapter adapter = new ContentAdapter(getActivity(), venueContents, R.color.colorPrimary);
 
         //Find the ListView object in the view hierarchy, The ListView called list is
         // declared in the venue_list.xml layout file

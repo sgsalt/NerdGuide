@@ -25,7 +25,7 @@ public class ContentAdapter extends ArrayAdapter<VenueContent> {
      *
      * @param context is the activity that the adapter is being created in.
      * @param venues is the list of {@link VenueContent} to be displayed.
-     * @param colorResourceId is the beackground colour for this list of venues
+     * @param colorResourceId is the background colour for this list of venues
      * */
     public ContentAdapter (Context context, ArrayList<VenueContent> venues, int colorResourceId) {
         super(context, 0, venues);
@@ -59,20 +59,40 @@ public class ContentAdapter extends ArrayAdapter<VenueContent> {
             imageView.setVisibility(View.GONE);
         }
 
-        //Find the TextView in the venue_item.xml layout file with the ID venue_location_text
+        //Find the TextView in the venue_content.xml layout file with the ID venue_location_text
         TextView locationTextView = listItemView.findViewById(R.id.venue_location);
             //Get the text from the currentVenue object and set it on the location TextView
         locationTextView.setText(currentVenue.getVenueLocation());
 
-        //Find the TextView in the venue_item.xml layout file with the ID venue_location_name
+        //Find the TextView in the venue_content.xml layout file with the ID venue_location_name
         TextView venueNameTextView = listItemView.findViewById(R.id.venue_name);
-            //Get the text from the currentVenue object and set it on the name TextView
+            //Get the text from the currentVenue object and set it on the named TextView
         venueNameTextView.setText(currentVenue.getVenueName());
 
-        //Find the TextView in the venue_item.xml layout file with the ID venue_details
+        //Find the TextView in the venue_content.xml layout file with the ID hashtags
+        TextView venueHashtagsTextView = listItemView.findViewById(R.id.hashtags);
+        //Get the text from the currentVenue object and set it on the hashtags TextView
+        venueHashtagsTextView.setText(currentVenue.getVenueHashtags());
+
+        //Find the TextView in the venue_content.xml layout file with the ID venue_details
         TextView venueDetailsTextView = listItemView.findViewById(R.id.venue_details);
-            //Get the text from the currentVenue object and set it on the name TextView
+            //Get the text from the currentVenue object and set it on the named TextView
         venueDetailsTextView.setText(currentVenue.getVenueDetails());
+
+        //Find the TextView in the venue_content.xml layout file with the ID address_text
+        TextView venueAddressTextView = listItemView.findViewById(R.id.address_text);
+        //Get the text from the currentVenue object and set it on the named TextView
+        venueAddressTextView.setText(currentVenue.getVenueAddress());
+
+        //Find the TextView in the venue_content.xml layout file with the ID phone_number
+        TextView venuePhoneTextView = listItemView.findViewById(R.id.phone_number);
+        //Get the text from the currentVenue object and set it on the named TextView
+        venuePhoneTextView.setText(currentVenue.getVenuePhone());
+
+        //Find the TextView in the venue_content.xml layout file with the ID times_text
+        TextView venueTimesTextView = listItemView.findViewById(R.id.times_text);
+        //Get the text from the currentVenue object and set it on the named TextView
+        venueTimesTextView.setText(currentVenue.getOpeningTimes());
 
         // Set the theme color for the list item
         View textContainer = listItemView.findViewById(R.id.item_container);

@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Nerd Guide</string>
 
+    <!--TODO remove slashes from hashtag strings-->
+
     <!--Strings for the category name tabs-->
     <string name="category_board_games">Board Games</string>
     <string name="category_video_games">Video Games</string>
@@ -10,13 +12,127 @@
     <!--strings for the venue content-->
     <string name="cardiff">Cardiff</string>
 
+    <!--board games -->
     <!--chance and counters text -->
     <string name="chance_and_counters_name">Chance and Counters</string>
     <string name="chance_details">Our venues are purpose\-built spaces for board gamers of all ages
         and abilities to enjoy, from casual players to seasoned strategists.\n\nWe take real pride in
         our food and drink too, from our rotating craft beers and ciders to our seasonal,
-        locally-sourced food.\n\nWith over 600 games and friendly, knowledgeable staff to help
-        you learn them, whether you\’re after the best in new board games or some old-school
-        classics we\’ve got you covered.</string>
+        locally-sourced food.</string>
+    <string name="chance_hashtags">#boardgames #cafe #bar</string>
+    <string name="chance_address">First floor, 23 High St, \nCardiff CF10 1PT</string>
+    <string name="chance_phone">029 2132 0220</string>
+    <string name="chance_times">10.00 to 23.00 Daily</string>
+
+    <!--firestorm text -->
+    <string name="firestorm_name">Firestorm</string>
+    <string name="firestorm_details">Situated inside the South Wales Gaming Centre, which has over
+        70 gaming boards and a licensed bar, it is the ideal venue for you to play and meet like
+        minded gamers to build on the ever growing community in South Wales.</string>
+    <string name="firestorm_hashtags">#warhammer #gaming #bar</string>
+    <string name="firestorm_address">15 Trade St, \nCardiff CF10 5DT</string>
+    <string name="firestorm_phone">029 2022 7117</string>
+    <string name="firestorm_times">12.00 to 23.00 Monday to Friday</string>
+
+    <!--rules of play text -->
+    <string name="rules_of_play_name">Rules of Play</string>
+    <string name="rules_of_play_details">We are Rules of Play \- the home of tabletop gaming in Wales,
+        located in the heart of Cardiff. Buy board games, watch video reviews, read game articles and more!</string>
+    <string name="rules_hashtags">#pokemon #boardgames #mtg</string>
+    <string name="rules_address">29 Castle Arcade, \nCardiff CF10 1BW</string>
+    <string name="rules_phone">029 2022 1695</string>
+    <string name="rules_times">10.00 to 18.00 Monday to Saturday</string>
+
+    <!--video games -->
+    <!--super tomato text -->
+    <string name="super_tomato_name">Super Tomato</string>
+    <string name="super_tomato_details">Super Tomato is an independent retailer of retro videogames,
+        manga and toys \- both from the UK and imported directly from Japan.</string>
+    <string name="super_tomato_hashtags">#retro #manga #independent</string>
+    <string name="super_tomato_address">17 Salisbury Rd, \nCardiff CF24 4AA</string>
+    <string name="super_tomato_phone">Suggest phone number</string>
+    <string name="super_tomato_times">10.30 to 17.00 Tuesday to Friday</string>
+
+    <!--kongs text -->
+    <string name="kongs_name">Kongs</string>
+    <string name="kongs_details">One of the best places to drink and play the night away in Cardiff,
+        Kongs isn\'t your run of the mill joint. Not only can you catch up on the latest sport and
+        grab a bite to eat, there\'s a roster of craft beer, plenty of arcade games to unleash your
+        competitive spirits on and ping pong tables for that all important match.</string>
+    <string name="kongs_hashtags">#arcade #bar #burgers</string>
+    <string name="kongs_address">114 St Mary St, \nCardiff CF10 1DY</string>
+    <string name="kongs_phone">029 2064 4114</string>
+    <string name="kongs_times">16.00 to 01.00 Daily</string>
+
+    <!--arcade vaults text -->
+    <string name="arcade_vaults_name">The Arcade Vaults</string>
+    <string name="arcade_vaults_details">We are The Arcade Vaults, an exciting and unique venue and
+        community in the centre of Cardiff for all things videogaming. If you make games, play games
+        both old and new, want to learn about games, or would just like to engage with the
+        community in this amazing world of games, then this is the place for you.</string>
+    <string name="arcade_vaults_hashtags">#retro #gaming #community</string>
+    <string name="arcade_vaults_address">27 High Street Arcade, \nCardiff CF10 1BB</string>
+    <string name="arcade_vaults_phone">029 2034 5136</string>
+    <string name="arcade_vaults_times">09.00 to 21.00 Thursday to Saturday</string>
+
+    <!--comics -->
+    <!--forbidden planet text -->
+    <string name="forbidden_planet_name">Forbidden Planet</string>
+    <string name="forbidden_planet_details">Forbidden Planet is the world\'s largest and best-known
+        comic, science fiction, fantasy and cult entertainment retailer!.</string>
+    <string name="forbidden_planet_hashtags">#comics #merch #marvel</string>
+    <string name="forbidden_planet_address">5 Duke St, \nCardiff CF10 1AY</string>
+    <string name="forbidden_planet_phone">029 2022 8885</string>
+    <string name="forbidden_planet_times">10.00 to 17.30 Monday to Saturday</string>
+
+    <!--fantasy centre text -->
+    <string name="fantasy_centre_name">Cardiff Fantasy Centre</string>
+    <string name="fantasy_centre_details">Established in 1978 making it Cardiff\'s longest running
+        comic book shop. Standing orders available from all major and independent comic book
+        publishers</string>
+    <string name="fantasy_centre_hashtags">#comics #rare #collectibles</string>
+    <string name="fantasy_centre_address">Jacobs Market, West Canal Wharf, Cardiff CF10 5DB</string>
+    <string name="fantasy_centre_phone">029 2065 8184</string>
+    <string name="fantasy_centre_times">11.00 to 15.30 Thursday to Saturday</string>
+
+    <!--troutmark text -->
+    <string name="troutmark_name">Troutmark Books</string>
+    <string name="troutmark_details">You get the impression that Troutmark Books is a place you
+        could just stop by for a chat while picking up a cheap book, magazine, comic or two.</string>
+    <string name="troutmark_hashtags">#books #comics #rare</string>
+    <string name="troutmark_address">Castle Arcade, \nCardiff CF10 1BW</string>
+    <string name="troutmark_phone">029 2038 2814</string>
+    <string name="troutmark_times">10.00 to 17.15 Monday to Saturday</string>
+
+    <!--vinyl -->
+    <!--dvinyl text -->
+    <string name="dvinyl_name">D\'Vinyl Records</string>
+    <string name="dvinyl_details">D\’Vinyl is an amazing little secondhand record store.
+        Walking in to it is like walking into a cave made entirely of cds and records.</string>
+    <string name="dvinyl_hashtags">#music #rare #vinyl</string>
+    <string name="dvinyl_address">4 MacKintosh Place, \nCardiff CF24 4RQ</string>
+    <string name="dvinyl_phone">029 2049 4998</string>
+    <string name="dvinyl_times">09.30 to 17.30 Monday to Saturday</string>
+
+
+    <!--spillers text -->
+    <string name="spillers_name">Spillers Records</string>
+    <string name="spillers_details">Spillers Records, established in 1894, is recognised as the
+        oldest record shop in the world. It is located in Cardiff, Wales. In addition to selling music,
+        it is the city\'s main location for buying tickets for alternative music concerts.</string>
+    <string name="spillers_hashtags">#vinyl #independent #cd</string>
+    <string name="spillers_address">27 Morgan Arcade, \nCardiff CF10 1AF</string>
+    <string name="spillers_phone">029 2022 4905</string>
+    <string name="spillers_times">10.00 to 18.00 Monday to Saturday</string>
+
+    <!--kellys text -->
+    <string name="kellys_name">Kellys Records</string>
+    <string name="kellys_details">Kellys Records is an independent record store founded in 1969 who
+        specialise in pre\-owned rare and collectible vinyl.</string>
+    <string name="kellys_hashtags">#rare #preowned #vinyl</string>
+    <string name="kellys_address">Central Market, \nCardiff CF10 1AU</string>
+    <string name="kellys_phone">029 2037 7355</string>
+    <string name="kellys_times">09.00 to 17.00 Monday to Saturday</string>
+
 
 </resources>

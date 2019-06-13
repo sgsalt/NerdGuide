@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Get the view pager that will allow the user to swipe between fragments
-        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
+        ViewPager viewPager = findViewById(R.id.viewpager);
 
         //Create an adapter which knows which fragment to show on each page
         CategoryAdapter adapter = new CategoryAdapter(this, getSupportFragmentManager());
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setAdapter(adapter);
 
         //Find the tab layout
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
+        TabLayout tabLayout = findViewById(R.id.tabs);
 
         // Connect the tab layout to the view pager
         //  1. Update the tab layout when the view pager is swiped

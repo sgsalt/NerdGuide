@@ -35,10 +35,18 @@ public class ComicsFragment extends Fragment {
 
         //Create the venue array
         final ArrayList<VenueContent> venueContents = new ArrayList<>();
-        venueContents.add(new VenueContent(R.drawable.retro_toys, "Cardiff", R.string.chance_and_counters_name,R.string.chance_details ));
+        venueContents.add(new VenueContent(R.drawable.forbidden_planet, "Cardiff", R.string.forbidden_planet_name,
+                R.string.forbidden_planet_hashtags, R.string.forbidden_planet_details, R.string.forbidden_planet_address,
+                R.string.forbidden_planet_phone, R.string.forbidden_planet_times));
+        venueContents.add(new VenueContent(R.drawable.fantasy_centre, "Cardiff", R.string.fantasy_centre_name,
+                R.string.fantasy_centre_hashtags, R.string.fantasy_centre_details, R.string.fantasy_centre_address,
+                R.string.fantasy_centre_phone, R.string.fantasy_centre_times));
+        venueContents.add(new VenueContent(R.drawable.troutmark, "Cardiff", R.string.troutmark_name,
+                R.string.troutmark_hashtags, R.string.troutmark_details, R.string.troutmark_address,
+                R.string.troutmark_phone, R.string.troutmark_times));
 
         // Create a ContentAdapter whose data source is the list of venues.
-        ContentAdapter adapter = new ContentAdapter(getActivity(), venueContents, R.color.colorAccent);
+        ContentAdapter adapter = new ContentAdapter(getActivity(), venueContents, R.color.colorPrimary);
 
         //Find the ListView object in the view hierarchy, The ListView called list is
         // declared in the venue_list.xml layout file

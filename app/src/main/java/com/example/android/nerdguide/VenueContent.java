@@ -8,7 +8,7 @@ package com.example.android.nerdguide;
 public class VenueContent {
 
     // Image resource ID for the venue
-    private int mImageResourceId = NO_IMAGE_PROVIDED;
+    private int mImageResourceId;
 
     private static final int NO_IMAGE_PROVIDED = -1;
 
@@ -18,22 +18,44 @@ public class VenueContent {
     // Name of the venue
     private int mVenueName;
 
+    // Venue hash tags
+    private int mVenueHashtags;
+
     // Details about the venue
     private int mVenueDetails;
+
+    // Address of the venue
+    private int mVenueAdress;
+
+    // Venue phone number
+    private int mVenuePhone;
+
+    // Opening times of the venue
+    private int mOpeningTimes;
 
     /**
      * Creates the new Venue content object.
      *
      * @param venueLocation is the city where the venue is located
      * @param venueName     is the name of the venue
+     * @param venueHashtags hashtags to identify topics of interest to nerds.
      * @param venueDetails  is details about the location such as what you can do there,
      *                      what it sells, or why it's of interest to nerds.
+     * @param venueAddress  the address of the venue.
+     * @param venuePhone    phone number of the venue.
+     * @param openingTimes  the venues opening hours.
+     *
      */
-    public VenueContent(int imageResourceId, String venueLocation, int venueName, int venueDetails) {
+    public VenueContent(int imageResourceId, String venueLocation, int venueName, int venueHashtags,
+                        int venueDetails, int venueAddress, int venuePhone, int openingTimes) {
         mImageResourceId = imageResourceId;
         mVenueLocation = venueLocation;
         mVenueName = venueName;
+        mVenueHashtags = venueHashtags;
         mVenueDetails = venueDetails;
+        mVenueAdress = venueAddress;
+        mVenuePhone = venuePhone;
+        mOpeningTimes = openingTimes;
     }
 
     /**
@@ -55,9 +77,29 @@ public class VenueContent {
         return mVenueName;
     }
 
+    // Get the venue hashtags
+    public int getVenueHashtags() {
+        return mVenueHashtags;
+    }
+
     // Get the venue details
     public int getVenueDetails() {
         return mVenueDetails;
+    }
+
+    // Get the venue address
+    public int getVenueAddress() {
+        return mVenueAdress;
+    }
+
+    // Get the venue phone number
+    public int getVenuePhone() {
+        return mVenuePhone;
+    }
+
+    // Get the venue opening times
+    public int getOpeningTimes() {
+        return mOpeningTimes;
     }
 
     /** Returns whether or not there is an image for this venue */
