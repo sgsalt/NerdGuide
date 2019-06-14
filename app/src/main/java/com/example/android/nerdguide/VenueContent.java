@@ -64,43 +64,62 @@ public class VenueContent {
 
     // Get the correct image for the venue
     public int getImageResourceId() {
+
         return mImageResourceId;
     }
 
     // Get the venue location
     public String getVenueLocation() {
+
         return mVenueLocation;
     }
 
     // Get the venue name
     public int getVenueName() {
+
         return mVenueName;
     }
 
     // Get the venue hashtags
     public int getVenueHashtags() {
+
         return mVenueHashtags;
     }
 
     // Get the venue details
     public int getVenueDetails() {
+
         return mVenueDetails;
     }
 
     // Get the venue address
     public int getVenueAddress() {
+
         return mVenueAdress;
     }
 
     // Get the venue phone number
     public int getVenuePhone() {
+
         return mVenuePhone;
     }
 
     // Get the venue opening times
     public int getOpeningTimes() {
+
         return mOpeningTimes;
     }
+
+    /**
+     * Setter Methods for the variables
+     */
+
+    //Set the venue location
+    public void setVenueLocation(String VenueLocation) {
+        mVenueLocation = VenueLocation;
+    }
+
+    //TODO: Continue adding setter methods if ever needed.
 
     /**
      * Returns whether or not there is an image for this venue
