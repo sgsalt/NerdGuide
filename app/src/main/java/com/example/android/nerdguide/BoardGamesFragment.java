@@ -55,6 +55,7 @@ public class BoardGamesFragment extends Fragment {
         //Set the ListView on the ContentAdapter created above
         listView.setAdapter(adapter);
 
+
         return rootView;
 
     }

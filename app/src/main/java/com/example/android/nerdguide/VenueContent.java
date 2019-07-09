@@ -8,11 +8,9 @@ package com.example.android.nerdguide;
 
 public class VenueContent {
 
+    private static final int NO_IMAGE_PROVIDED = -1;
     // Image resource ID for the venue
     private int mImageResourceId;
-
-    private static final int NO_IMAGE_PROVIDED = -1;
-
     // Location (city) of the venue
     private String mVenueLocation;
 
@@ -74,6 +72,15 @@ public class VenueContent {
         return mVenueLocation;
     }
 
+    /**
+     * Setter Methods for the variables
+     */
+
+    //Set the venue location
+    public void setVenueLocation(String VenueLocation) {
+        mVenueLocation = VenueLocation;
+    }
+
     // Get the venue name
     public int getVenueName() {
 
@@ -108,15 +115,6 @@ public class VenueContent {
     public int getOpeningTimes() {
 
         return mOpeningTimes;
-    }
-
-    /**
-     * Setter Methods for the variables
-     */
-
-    //Set the venue location
-    public void setVenueLocation(String VenueLocation) {
-        mVenueLocation = VenueLocation;
     }
 
     //TODO: Continue adding setter methods if ever needed.

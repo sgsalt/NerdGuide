@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -11,16 +11,29 @@
     <!-- This is the theme for the location text -->
     <style name="LocationText" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Overline</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
         <item name="android:textColor">@color/secondaryText</item>
         <item name="android:padding">16dp</item>
+        <item name="android:letterSpacing">0.3</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- This is the theme for the hashtags text -->
+    <style name="HashtagsText" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Overline</item>
+        <item name="android:textColor">@color/secondaryText</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">24dp</item>
         <item name="android:gravity">center</item>
     </style>
 
     <!-- This is the theme for the venue name text -->
     <style name="VenueNameText" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Headline3</item>
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Headline3
+        </item>
         <item name="android:textColor">@color/primaryText</item>
         <item name="android:paddingLeft">16dp</item>
         <item name="android:paddingRight">16dp</item>
@@ -32,9 +45,15 @@
     <!-- This is the theme for the venue details text -->
     <style name="VenueDetailsText" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/merriweather</item>
+        <item name="android:lineSpacingExtra">8dp</item>
         <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Body1</item>
         <item name="android:textColor">@color/primaryText</item>
-        <item name="android:padding">16dp</item>
+        <item name="android:paddingLeft">@dimen/medium_margin</item>
+        <item name="android:paddingRight">@dimen/medium_margin</item>
+        <item name="android:paddingTop">@dimen/large_margin</item>
+        <item name="android:paddingBottom">@dimen/large_margin</item>
+        <item name="android:gravity">center_horizontal</item>
     </style>
 
     <!-- This is the theme for the address,phone and opening hours text -->
@@ -42,7 +61,11 @@
         <!-- Customize your theme here. -->
         <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Body1</item>
         <item name="android:textColor">@color/primaryText</item>
-        <item name="android:paddingLeft">16dp</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingLeft">24dp</item>
     </style>
 
 </resources>

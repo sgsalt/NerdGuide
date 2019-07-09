@@ -8,9 +8,9 @@
 
     <ImageView
         android:id="@+id/venue_image"
-        android:contentDescription="@string/venue_image"
         android:layout_width="match_parent"
         android:layout_height="250dp"
+        android:contentDescription="@string/venue_image"
         android:scaleType="centerCrop"
         android:src="@drawable/retro_toys" />
 
@@ -31,92 +31,90 @@
 
     <TextView
         android:id="@+id/hashtags"
-        style="@style/LocationText"
+        style="@style/HashtagsText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:text="@tools:sample/lorem" />
 
 
     <ImageView
-        android:contentDescription="@string/divider"
         android:layout_width="250dp"
         android:layout_height="1dp"
         android:layout_gravity="center"
-        android:background="@color/dividerColor" />
+        android:background="@color/dividerColor"
+        android:contentDescription="@string/divider" />
 
     <TextView
         android:id="@+id/venue_details"
         style="@style/VenueDetailsText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         tools:text="@tools:sample/lorem" />
 
     <ImageView
-        android:contentDescription="@string/divider"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/dividerColor" />
+        android:background="@color/dividerColor"
+        android:contentDescription="@string/divider" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingBottom="8dp"
-        android:paddingTop="8dp">
+        android:orientation="horizontal">
 
         <TextView
-            android:drawableLeft="@drawable/ic_place_24px"
-            android:drawablePadding="@dimen/medium_margin"
             android:id="@+id/address_text"
             style="@style/AddressPhoneHoursText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_place_24px"
+            android:drawablePadding="@dimen/large_margin"
+            android:drawableTint="@color/primaryText"
             tools:text="@tools:sample/lorem" />
     </LinearLayout>
 
     <ImageView
-        android:contentDescription="@string/divider"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/dividerColor" />
+        android:background="@color/dividerColor"
+        android:contentDescription="@string/divider" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingBottom="@dimen/small_margin"
-        android:paddingTop="@dimen/small_margin">
+        android:orientation="horizontal">
 
         <TextView
-            android:drawableLeft="@drawable/ic_phone_24px"
-            android:drawablePadding="@dimen/medium_margin"
             android:id="@+id/phone_number"
             style="@style/AddressPhoneHoursText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_phone_24px"
+            android:drawablePadding="@dimen/large_margin"
+            android:drawableTint="@color/primaryText"
             tools:text="@tools:sample/lorem" />
     </LinearLayout>
 
     <ImageView
-        android:contentDescription="@string/divider"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/dividerColor" />
+        android:background="@color/dividerColor"
+        android:contentDescription="@string/divider" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingBottom="@dimen/small_margin"
-        android:paddingTop="@dimen/small_margin">
+        android:orientation="horizontal">
 
         <TextView
-            android:drawableLeft="@drawable/ic_time_24px"
-            android:drawablePadding="@dimen/medium_margin"
             android:id="@+id/times_text"
             style="@style/AddressPhoneHoursText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_time_24px"
+            android:drawablePadding="@dimen/large_margin"
+            android:drawableTint="@color/primaryText"
             tools:text="@tools:sample/lorem" />
 
     </LinearLayout>
