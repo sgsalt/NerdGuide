@@ -1,4 +1,4 @@
-# NerdGuide
+# Nerd Guide
 Android Basics by Google Nanodegree Program
 
 Project: Tour Guide App
